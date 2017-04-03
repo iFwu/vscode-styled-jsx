@@ -2,7 +2,7 @@
 
 Syntax highlighting for [styled-jsx](https://github.com/zeit/styled-jsx)
 
-![Syntax highlighting in action](https://raw.githubusercontent.com/xekri/vscode-styled-jsx/master/highlight-preview.jpg)
+<img src="https://raw.githubusercontent.com/xekri/vscode-styled-jsx/master/highlight-preview.jpg" width="400">
 
 
 Syntaxes files are inspired by [vscode-styled-components](https://github.com/styled-components/vscode-styled-components.git)
