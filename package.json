@@ -1,0 +1,41 @@
+{
+    "name": "vscode-styled-jsx",
+    "displayName": "vscode-styled-jsx",
+    "description": "Syntax highlighting for styled-jsx",
+    "version": "0.1.0",
+    "publisher": "blanu",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+		"languages": [
+			{
+				"id": "source.jsx.styled",
+				"aliases": [
+					"CSS (jsx styled)"
+				],
+				"configuration": "./language.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "source.css.styled",
+				"scopeName": "source.css.styled",
+				"path": "./syntaxes/css.json"
+			},
+			{
+				"injectTo": [
+					"source.js",
+					"source.ts",
+					"source.jsx",
+					"source.tsx"
+				],
+				"scopeName": "styled-jsx",
+				"path": "./syntaxes/jsx-styled.json"
+			}
+		]
+	}
+}
