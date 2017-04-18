@@ -17,7 +17,7 @@
     "contributes": {
 		"languages": [
 			{
-				"id": "source.css.styled",
+				"id": "source.jsx.styled",
 				"aliases": [
 					"CSS (jsx styled)"
 				],
@@ -26,8 +26,8 @@
 		],
 		"grammars": [
 			{
-				"language": "source.css.styled",
-				"scopeName": "source.css.styled",
+				"language": "source.jsx.styled",
+				"scopeName": "source.jsx.styled",
 				"path": "./syntaxes/css.json"
 			},
 			{
