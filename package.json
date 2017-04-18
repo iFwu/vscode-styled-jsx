@@ -17,11 +17,11 @@
     "contributes": {
 		"languages": [
 			{
-				"id": "source.jsx.styled",
+				"id": "source.css.styled",
 				"aliases": [
 					"CSS (jsx styled)"
 				],
-				"configuration": "./language.configuration.json"
+				"configuration": "./language-configuration.json"
 			}
 		],
 		"grammars": [
