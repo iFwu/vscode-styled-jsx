@@ -21,13 +21,13 @@
 				"aliases": [
 					"CSS (jsx styled)"
 				],
-				"configuration": "./language.configuration.json"
+				"configuration": "./language-configuration.json"
 			}
 		],
 		"grammars": [
 			{
-				"language": "source.css.styled",
-				"scopeName": "source.css.styled",
+				"language": "source.jsx.styled",
+				"scopeName": "source.jsx.styled",
 				"path": "./syntaxes/css.json"
 			},
 			{
