@@ -35,6 +35,7 @@
           "source.js",
           "source.ts",
           "source.jsx",
+          "source.js.jsx",
           "source.tsx"
         ],
         "scopeName": "styled-jsx",
