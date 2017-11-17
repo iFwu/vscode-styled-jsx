@@ -1,46 +1,46 @@
 {
-    "name": "vscode-styled-jsx",
-    "displayName": "vscode-styled-jsx",
-    "description": "Syntax highlighting for styled-jsx",
-    "version": "0.2.0",
-    "publisher": "blanu",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/xekri/vscode-styled-jsx"
-    },
-    "categories": [
-        "Languages"
-    ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "source.jsx.styled",
-                "aliases": [
-                    "CSS (jsx styled)"
-                ],
-                "configuration": "./language-configuration.json"
-            }
+  "name": "vscode-styled-jsx",
+  "displayName": "vscode-styled-jsx",
+  "description": "Syntax highlighting for styled-jsx",
+  "version": "0.2.1",
+  "publisher": "blanu",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xekri/vscode-styled-jsx"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "source.jsx.styled",
+        "aliases": [
+          "CSS (jsx styled)"
         ],
-        "grammars": [
-            {
-                "language": "source.jsx.styled",
-                "scopeName": "source.jsx.styled",
-                "path": "./syntaxes/css.json"
-            },
-            {
-                "injectTo": [
-                    "source.js",
-                    "source.ts",
-                    "source.jsx",
-                    "source.js.jsx",
-                    "source.tsx"
-                ],
-                "scopeName": "styled-jsx",
-                "path": "./syntaxes/jsx-styled.json"
-            }
-        ]
-    }
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "source.jsx.styled",
+        "scopeName": "source.jsx.styled",
+        "path": "./syntaxes/css.json"
+      },
+      {
+        "injectTo": [
+          "source.js",
+          "source.ts",
+          "source.jsx",
+          "source.js.jsx",
+          "source.tsx"
+        ],
+        "scopeName": "styled-jsx",
+        "path": "./syntaxes/jsx-styled.json"
+      }
+    ]
+  }
 }
