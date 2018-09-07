@@ -2,17 +2,17 @@
     "name": "vscode-styled-jsx",
     "displayName": "vscode-styled-jsx",
     "description": "Syntax highlighting for styled-jsx",
-    "version": "0.2.3",
+    "version": "0.2.5",
     "publisher": "blanu",
     "engines": {
-        "vscode": "^1.5.0"
+        "vscode": "^1.26.0"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/xekri/vscode-styled-jsx"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [
