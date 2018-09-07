@@ -1,40 +1,28 @@
 {
-  "fileTypes": [
-    "js",
-    "jsx",
-    "ts",
-    "tsx"
-  ],
-  "injectionSelector": "L:source -comment",
+  "fileTypes": ["js", "jsx", "ts", "tsx"],
+  "injectionSelector": "L:source -comment -string",
   "patterns": [
     {
-      "contentName": "source.jsx.styled",
-      "begin": "(?:(?:\\s*+((?<=<style jsx>)|(?<=<style jsx global>)|(?<=<style global jsx>))({))|(?:\\s++css))\\s*(`)",
+			"contentName": "source.jsx.styled",
+      "begin": "(?:(?<=<style jsx>)|(?<=<style jsx global>)|(?<=<style global jsx>))({)(`)",
       "beginCaptures": {
         "1": {
-          "name": "entity.name.tag.js"
-        },
-        "2": {
           "name": "punctuation.definition.block.js"
         },
-        "3": {
-          "name": "punctuation.definition.quasi.begin.js"
+        "2": {
+          "name": "punctuation.definition.string.template.begin.js"
         }
       },
-      "end": "\\s*(?<=[^\\\\]\\\\\\\\|[^\\\\]|^\\\\\\\\|^)(`)(})?",
+      "end": "(`)(})",
       "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.string.template.end.js"
+        },
         "2": {
           "name": "punctuation.definition.block.js"
-        },
-        "1": {
-          "name": "punctuation.definition.quasi.end.js"
         }
       },
-      "patterns": [
-        {
-          "include": "source.jsx.styled"
-        }
-      ]
+      "patterns": [{ "include": "source.css.scss" }]
     }
   ],
   "scopeName": "styled-jsx"
