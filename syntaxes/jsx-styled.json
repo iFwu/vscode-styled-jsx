@@ -3,7 +3,7 @@
   "injectionSelector": "L:source -comment -string",
   "patterns": [
     {
-			"contentName": "source.jsx.styled",
+			"contentName": "source.css.scss",
       "begin": "(?:(?<=<style jsx>)|(?<=<style jsx global>)|(?<=<style global jsx>))({)(`)",
       "beginCaptures": {
         "1": {
@@ -22,7 +22,7 @@
           "name": "punctuation.definition.block.js"
         }
       },
-      "patterns": [{ "include": "source.css.scss" }]
+      "patterns": [{ "include": "source.css.jsx.styled" }]
     }
   ],
   "scopeName": "styled-jsx"

@@ -10,3 +10,4 @@ Uses the CSS grammar from the Atom [language-babel](https://github.com/gandm/lan
 
 * Add support for css attributes autocomplete
 * Add support for classNames autocomplete
+* fix too many interpolation includes in partterns

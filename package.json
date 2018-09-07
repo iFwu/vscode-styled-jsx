@@ -17,17 +17,17 @@
     "contributes": {
         "languages": [
             {
-                "id": "source.jsx.styled",
+                "id": "source.css.jsx.styled",
                 "aliases": [
-                    "CSS (jsx styled)"
+                    "CSS (Styled JSX)"
                 ],
                 "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "source.jsx.styled",
-                "scopeName": "source.jsx.styled",
+                "language": "source.css.jsx.styled",
+                "scopeName": "source.css.jsx.styled",
                 "path": "./syntaxes/css.json"
             },
             {
@@ -39,7 +39,11 @@
                     "source.tsx"
                 ],
                 "scopeName": "styled-jsx",
-                "path": "./syntaxes/jsx-styled.json"
+                "path": "./syntaxes/jsx-styled.json",
+                "embeddedLanguages": {
+                    "source.css.scss": "css",
+                    "meta.embedded.line.ts": "typescript"
+                }
             }
         ]
     }
