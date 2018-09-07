@@ -2,7 +2,7 @@
     "name": "vscode-styled-jsx",
     "displayName": "vscode-styled-jsx",
     "description": "Syntax highlighting for styled-jsx",
-    "version": "0.2.5",
+    "version": "1.0.0",
     "publisher": "blanu",
     "engines": {
         "vscode": "^1.26.0"
