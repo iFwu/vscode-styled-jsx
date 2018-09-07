@@ -3,26 +3,80 @@
   "injectionSelector": "L:source -comment -string",
   "patterns": [
     {
-			"contentName": "source.css.scss",
-      "begin": "(?:(?<=<style jsx>)|(?<=<style jsx global>)|(?<=<style global jsx>))({)(`)",
+      "begin": "(?:(<)(style) (jsx)(>))|(?:(<)(style) (jsx global)(>))|(?:(<)(style) (global jsx)(>))",
       "beginCaptures": {
         "1": {
-          "name": "punctuation.definition.block.js"
+          "name": "punctuation.definition.tag.begin.js.jsx"
         },
         "2": {
-          "name": "punctuation.definition.string.template.begin.js"
+          "name": "entity.name.tag.js.jsx"
+        },
+        "3": {
+          "name": "entity.other.attribute-name.js.jsx"
+        },
+        "4": {
+          "name": "punctuation.definition.tag.end.js.jsx"
+        },
+        "5": {
+          "name": "punctuation.definition.tag.begin.js.jsx"
+        },
+        "6": {
+          "name": "entity.name.tag.js.jsx"
+        },
+        "7": {
+          "name": "entity.other.attribute-name.js.jsx"
+        },
+        "8": {
+          "name": "punctuation.definition.tag.end.js.jsx"
+        },
+        "9": {
+          "name": "punctuation.definition.tag.begin.js.jsx"
+        },
+        "10": {
+          "name": "entity.name.tag.js.jsx"
+        },
+        "12": {
+          "name": "entity.other.attribute-name.js.jsx"
+        },
+        "13": {
+          "name": "punctuation.definition.tag.end.js.jsx"
         }
       },
-      "end": "(`)(})",
+      "end": "(</)(style)(>)",
       "endCaptures": {
         "1": {
-          "name": "punctuation.definition.string.template.end.js"
+          "name": "punctuation.definition.tag.begin.js.jsx"
         },
         "2": {
-          "name": "punctuation.definition.block.js"
+          "name": "entity.name.tag.js.jsx"
+        },
+        "3": {
+          "name": "punctuation.definition.tag.end.js.jsx"
         }
       },
-      "patterns": [{ "include": "source.css.jsx.styled" }]
+      "patterns": [
+        {
+          "begin": "({)(`)",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.block.js"
+            },
+            "2": {
+              "name": "punctuation.definition.string.template.begin.js"
+            }
+          },
+          "end": "(`)(})",
+          "endCaptures": {
+            "1": {
+              "name": "punctuation.definition.string.template.end.js"
+            },
+            "2": {
+              "name": "punctuation.definition.block.js"
+            }
+          },
+          "patterns": [{ "include": "source.css.jsx.styled" }]
+        }
+      ]
     }
   ],
   "scopeName": "styled-jsx"
