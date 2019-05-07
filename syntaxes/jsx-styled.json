@@ -80,7 +80,7 @@
     },
 		{
 			"contentName": "source.css.scss",
-			"begin": "(?:(?:(\\.)(resolve|global))|(\\bcss))(`)",
+			"begin": "(?:(?:(\\bcss\\.)(resolve|global))|(\\bcss))(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "punctuation.accessor.js"
