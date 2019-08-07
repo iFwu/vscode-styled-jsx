@@ -1,4 +1,4 @@
-| ⚠️ This repository is no longer actively maintained, since I no longer have a requirement for react and styled-jsx and I am unable to commit time to maintaining it. If you're interested in taking over, please let me know. |
+| ⚠️ This repository is no longer actively maintained, since I no longer have a requirement for `react` and `styled-jsx` and I am unable to commit time to maintaining it. If you're interested in taking over, please let me know. |
 | --- |
 
 
